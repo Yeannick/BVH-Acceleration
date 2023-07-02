@@ -1,0 +1,182 @@
+﻿  Compiling CUDA source file Source\BRDF.cu...
+  Compiling CUDA source file Source\Light.cu...
+  Compiling CUDA source file Source\Raytrace.cu...
+  
+  C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.0\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.30.30705\bin\HostX64\x64" -x cu   -I"C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\include\sdl2-2.0.9" -IC:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\\include -I"C:\Program Files (x86)\Visual Leak Detector\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.0\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static  -g  -D_MBCS -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc143.pdb /FS /Zi /RTC1 /MDd " -o C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\x64\Debug\Light.cu.obj "C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Light.cu" 
+  
+  C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.0\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.30.30705\bin\HostX64\x64" -x cu   -I"C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\include\sdl2-2.0.9" -IC:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\\include -I"C:\Program Files (x86)\Visual Leak Detector\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.0\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static  -g  -D_MBCS -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc143.pdb /FS /Zi /RTC1 /MDd " -o C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\x64\Debug\Raytrace.cu.obj "C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu" 
+  
+  C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.0\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.30.30705\bin\HostX64\x64" -x cu   -I"C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\include\sdl2-2.0.9" -IC:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\\include -I"C:\Program Files (x86)\Visual Leak Detector\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.0\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static  -g  -D_MBCS -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc143.pdb /FS /Zi /RTC1 /MDd " -o C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\x64\Debug\BRDF.cu.obj "C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\BRDF.cu" 
+  Light.cu
+  BRDF.cu
+  tmpxft_000050c4_00000000-7_Light.cudafe1.cpp
+  tmpxft_00006614_00000000-7_BRDF.cudafe1.cpp
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\FVector4.h(20): warning #20012-D: __device__ annotation is ignored on a function("FVector4") that is explicitly defaulted on its first declaration
+  
+  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\FVector4.h(20): warning #20012-D: __host__ annotation is ignored on a function("FVector4") that is explicitly defaulted on its first declaration
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\FVector3.h(18): warning #20012-D: __device__ annotation is ignored on a function("FVector3") that is explicitly defaulted on its first declaration
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\FVector3.h(18): warning #20012-D: __host__ annotation is ignored on a function("FVector3") that is explicitly defaulted on its first declaration
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\FMatrix.h(8): warning #20012-D: __device__ annotation is ignored on a function("FMatrix") that is explicitly defaulted on its first declaration
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\FMatrix.h(8): warning #20012-D: __host__ annotation is ignored on a function("FMatrix") that is explicitly defaulted on its first declaration
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\PrimitiveTypes.h(13): warning #20012-D: __device__ annotation is ignored on a function("LambertMaterial") that is explicitly defaulted on its first declaration
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\PrimitiveTypes.h(13): warning #20012-D: __host__ annotation is ignored on a function("LambertMaterial") that is explicitly defaulted on its first declaration
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\PrimitiveTypes.h(23): warning #20012-D: __device__ annotation is ignored on a function("PBRMaterial") that is explicitly defaulted on its first declaration
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\PrimitiveTypes.h(23): warning #20012-D: __host__ annotation is ignored on a function("PBRMaterial") that is explicitly defaulted on its first declaration
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\PrimitiveTypes.h(61): warning #1866-D: attribute does not apply to any entity
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\PrimitiveTypes.h(151): warning #1866-D: attribute does not apply to any entity
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\PrimitiveTypes.h(299): warning #1866-D: attribute does not apply to any entity
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Light.h(5): warning #1866-D: attribute does not apply to any entity
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\FVector2.h(7): warning #20012-D: __device__ annotation is ignored on a function("FVector2") that is explicitly defaulted on its first declaration
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(50): warning #1866-D: attribute does not apply to any entity
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(132): warning #1569-D: specifiers after comma between declarations are nonstandard
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\FVector4.h(20): warning #20012-D: __device__ annotation is ignored on a function("FVector4") that is explicitly defaulted on its first declaration
+  
+  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\FVector4.h(20): warning #20012-D: __host__ annotation is ignored on a function("FVector4") that is explicitly defaulted on its first declaration
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\FVector3.h(18): warning #20012-D: __device__ annotation is ignored on a function("FVector3") that is explicitly defaulted on its first declaration
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\FVector3.h(18): warning #20012-D: __host__ annotation is ignored on a function("FVector3") that is explicitly defaulted on its first declaration
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\FMatrix.h(8): warning #20012-D: __device__ annotation is ignored on a function("FMatrix") that is explicitly defaulted on its first declaration
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\FMatrix.h(8): warning #20012-D: __host__ annotation is ignored on a function("FMatrix") that is explicitly defaulted on its first declaration
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\FMatrix.h(82): warning #20014-D: calling a __host__ function from a __host__ __device__ function is not allowed
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\FMatrix.h(86): warning #20014-D: calling a __host__ function from a __host__ __device__ function is not allowed
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\FMatrix.h(87): warning #20014-D: calling a __host__ function from a __host__ __device__ function is not allowed
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\FMatrix.h(88): warning #20014-D: calling a __host__ function from a __host__ __device__ function is not allowed
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\FMatrix.h(89): warning #20014-D: calling a __host__ function from a __host__ __device__ function is not allowed
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\FMatrix.h(139): warning #20014-D: calling a __host__ function from a __host__ __device__ function is not allowed
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\FMatrix.h(139): warning #20014-D: calling a __host__ function from a __host__ __device__ function is not allowed
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\PrimitiveTypes.h(13): warning #20012-D: __device__ annotation is ignored on a function("LambertMaterial") that is explicitly defaulted on its first declaration
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\PrimitiveTypes.h(13): warning #20012-D: __host__ annotation is ignored on a function("LambertMaterial") that is explicitly defaulted on its first declaration
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\PrimitiveTypes.h(23): warning #20012-D: __device__ annotation is ignored on a function("PBRMaterial") that is explicitly defaulted on its first declaration
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\PrimitiveTypes.h(23): warning #20012-D: __host__ annotation is ignored on a function("PBRMaterial") that is explicitly defaulted on its first declaration
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\PrimitiveTypes.h(61): warning #1866-D: attribute does not apply to any entity
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\PrimitiveTypes.h(151): warning #1866-D: attribute does not apply to any entity
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\PrimitiveTypes.h(299): warning #1866-D: attribute does not apply to any entity
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Light.h(5): warning #1866-D: attribute does not apply to any entity
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\FVector2.h(7): warning #20012-D: __device__ annotation is ignored on a function("FVector2") that is explicitly defaulted on its first declaration
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(50): warning #1866-D: attribute does not apply to any entity
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(99): warning #177-D: variable "N" was declared but never referenced
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(132): warning #1569-D: specifiers after comma between declarations are nonstandard
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(499): warning #177-D: variable "candidatePos" was declared but never referenced
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1302): warning #177-D: variable "meshes" was declared but never referenced
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(55): warning #177-D: variable "BINS" was declared but never referenced
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\FMatrix.h(82): warning #20011-D: calling a __host__ function("FMatrix::operator [](int)") from a __host__ __device__ function("FMatrix::Transpose") is not allowed
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\FMatrix.h(86): warning #20011-D: calling a __host__ function("FMatrix::operator [](int)") from a __host__ __device__ function("FMatrix::Transpose") is not allowed
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\FMatrix.h(87): warning #20011-D: calling a __host__ function("FMatrix::operator [](int)") from a __host__ __device__ function("FMatrix::Transpose") is not allowed
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\FMatrix.h(88): warning #20011-D: calling a __host__ function("FMatrix::operator [](int)") from a __host__ __device__ function("FMatrix::Transpose") is not allowed
+  
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\FMatrix.h(89): warning #20011-D: calling a __host__ function("FMatrix::operator [](int)") from a __host__ __device__ function("FMatrix::Transpose") is not allowed
+  
+CUDACOMPILE : ptxas warning : Stack size for entry function '_Z8BuildBVHP7BVHNodeP13CTriangleMeshiP5LightiPi' cannot be statically determined
+  Raytrace.cu
+  tmpxft_000032f8_00000000-7_Raytrace.cudafe1.cpp
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1419): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1440): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'const char *'
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1440): warning C4313: 'fprintf': '%d' in format string conflicts with argument 1 of type 'const char *'
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1456): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'const char *'
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1456): warning C4313: 'fprintf': '%d' in format string conflicts with argument 1 of type 'const char *'
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1545): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1545): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1636): warning C4474: 'fprintf' : too many arguments passed for format string
+  C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1636): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1640): warning C4474: 'fprintf' : too many arguments passed for format string
+  C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1640): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1644): warning C4474: 'fprintf' : too many arguments passed for format string
+  C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1644): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1648): warning C4474: 'fprintf' : too many arguments passed for format string
+  C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1648): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1652): warning C4474: 'fprintf' : too many arguments passed for format string
+  C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1652): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1660): warning C4474: 'fprintf' : too many arguments passed for format string
+  C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1660): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1668): warning C4474: 'fprintf' : too many arguments passed for format string
+  C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1668): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1673): warning C4474: 'fprintf' : too many arguments passed for format string
+  C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1673): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1678): warning C4474: 'fprintf' : too many arguments passed for format string
+  C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1678): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1682): warning C4474: 'fprintf' : too many arguments passed for format string
+  C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1682): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1696): warning C4474: 'fprintf' : too many arguments passed for format string
+  C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1696): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1700): warning C4474: 'fprintf' : too many arguments passed for format string
+  C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1700): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1704): warning C4474: 'fprintf' : too many arguments passed for format string
+  C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1704): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1710): warning C4474: 'fprintf' : too many arguments passed for format string
+  C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1710): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1714): warning C4474: 'fprintf' : too many arguments passed for format string
+  C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1714): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1722): warning C4474: 'fprintf' : too many arguments passed for format string
+  C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1722): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1730): warning C4474: 'fprintf' : too many arguments passed for format string
+  C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1730): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1735): warning C4474: 'fprintf' : too many arguments passed for format string
+  C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1735): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1772): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1786): warning C4474: 'fprintf' : too many arguments passed for format string
+  C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\Raytrace.cu(1786): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+  BenchMarker.cpp
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\BenchMarker.cpp(83,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  FVector3.cpp
+  FVector4.cpp
+  Material.cpp
+  PrimitiveTypes.cpp
+C:\Users\Yannick\Desktop\RaytracingASCuda\RaytracingASCuda\Source\PrimitiveTypes.cpp(14,36): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  SceneGraph.cpp
+  Renderer.cpp
+  main.cpp
+  Timer.cpp
+  Utils.cpp
+  Generating Code...
+     Creating library C:\Users\Yannick\Desktop\RaytracingASCuda\x64\Debug\RaytracingASCuda.lib and object C:\Users\Yannick\Desktop\RaytracingASCuda\x64\Debug\RaytracingASCuda.exp
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  RaytracingASCuda.vcxproj -> C:\Users\Yannick\Desktop\RaytracingASCuda\x64\Debug\RaytracingASCuda.exe

@@ -1,0 +1,20 @@
+-- Mesh Info --
+0
+0
+0
+-- Time Avergages --
+46.5437
+-nan(ind)
+-- Total INTERSECTION AMOUNT --
+127187152
+-- Triangle INTERSECTION AMOUNT --
+110167512
+-- Box INTERSECTION AMOUNT --
+17019640
+-- FalsePositive INTERSECTION AMOUNT --
+0
+-- FalsePositive BVH INTERSECTION AMOUNT --
+-- Sphere INTERSECTION AMOUNT --
+-- BVHBuild time --
+126.764
+-- BVHTraversal time --
